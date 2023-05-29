@@ -1,0 +1,72 @@
+<style>
+    #usage-statistics-sharing-modal .modal-dialog {
+       position: fixed;
+       top: auto;
+       right: auto;
+       left: calc(50% - 400px);
+       bottom: 0;
+       min-width: 800px;
+    }
+</style>
+
+<div class="modal" id="usage-statistics-sharing-modal" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Usage Statistics Sharing Notice</h4>
+			</div>
+			<div class="modal-body">
+				<p>Anonymous OpenNMS usage statistics is sent to
+					<a target="_blank" href="https://stats.opennms.org">OpenNMS Statistics</a>.
+					This will help us improve your OpenNMS software, subject to our
+					<a target="_blank" href="https://www.opennms.com/privacy/">privacy policy</a>.</p>
+			</div>
+			<div class="modal-footer">
+				<button id="usage-statistics-sharing-notice-learn-more" type="button" class="btn btn-success">Learn More</button>
+				<button id="usage-statistics-sharing-notice-dismiss" type="button" class="btn btn-secondary" data-dismiss="modal">Dismiss</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+(function() {
+    function ackInitialNotice(redirectUrl) {
+        var data = { initialNoticeAcknowledged: true };
+        $.ajax({
+            url: 'rest/datachoices/status',
+            method: 'POST',
+            dataType: 'json',
+            contentType: 'application/json',
+            processData: false,
+            data: JSON.stringify(data),
+            statusCode: {
+                 202: function() {
+                    if (redirectUrl) {
+                        window.location = redirectUrl;
+                    }
+                }
+            }
+        });
+    }
+
+    $(document).ready(function() {
+        $('#usage-statistics-sharing-modal').on('shown.bs.modal', function () {
+            $(this).find('.modal-dialog').css({height:'auto', 'max-height':'100%'});
+            $('#usage-statistics-sharing-notice-learn-more').focus();
+        });
+        $('#usage-statistics-sharing-notice-dismiss').click(function() {
+            ackInitialNotice();
+        });
+        $('#usage-statistics-sharing-notice-learn-more').click(function() {
+            ackInitialNotice('ui/index.html#/usage-statistics');
+        });
+        <#if showOnLoad>
+            $('#usage-statistics-sharing-modal').modal({
+                keyboard: false,
+                backdrop: 'static'
+            });
+        </#if>
+    });
+})();
+</script>
