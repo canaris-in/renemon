@@ -1,30 +1,30 @@
 <%--
 /*******************************************************************************
- * This file is part of Renemon(R).
+ * This file is part of OpenNMS(R).
  *
- * Copyright (C) 2002-2014 The Renemon Group, Inc.
- * Renemon(R) is Copyright (C) 1999-2014 The Renemon Group, Inc.
+ * Copyright (C) 2002-2014 The OpenNMS Group, Inc.
+ * OpenNMS(R) is Copyright (C) 1999-2014 The OpenNMS Group, Inc.
  *
- * Renemon(R) is a registered trademark of The Renemon Group, Inc.
+ * OpenNMS(R) is a registered trademark of The OpenNMS Group, Inc.
  *
- * Renemon(R) is free software: you can redistribute it and/or modify
+ * OpenNMS(R) is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published
  * by the Free Software Foundation, either version 3 of the License,
  * or (at your option) any later version.
  *
- * Renemon(R) is distributed in the hope that it will be useful,
+ * OpenNMS(R) is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Affero General Public License for more details.
  *
  * You should have received a copy of the GNU Affero General Public License
- * along with Renemon(R).  If not, see:
+ * along with OpenNMS(R).  If not, see:
  *      http://www.gnu.org/licenses/
  *
  * For more information contact:
- *     Renemon(R) Licensing <license@opennms.org>
+ *     OpenNMS(R) Licensing <license@opennms.org>
  *     http://www.opennms.org/
- *     https://canaris.in
+ *     http://www.opennms.com/
  *******************************************************************************/
 
 --%>
@@ -106,7 +106,7 @@
             <span>Outstanding and Acknowledged Notices</span>
           </div>
           <div class="card-body">
-            <p>When important events are detected by Renemon, users may 
+            <p>When important events are detected by OpenNMS, users may 
               receive a <em>notice</em>, a descriptive message sent automatically
               to a pager, an email address, or both. In order to
               receive notices, the user must have their notification information 
@@ -143,7 +143,7 @@
           </div>
           <div class="card-body">
             <p>Once a notice is sent, it is considered <em>outstanding</em> until 
-                someone <em>acknowledge</em>s receipt of the notice via the Renemon
+                someone <em>acknowledge</em>s receipt of the notice via the OpenNMS
                 Notification interface.&nbsp; If the event that 
                 triggered the notice was related to managed network devices or systems, 
                 the <strong>Network/Systems</strong> group will be notified, one by one, with a

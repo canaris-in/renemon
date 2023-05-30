@@ -1,30 +1,30 @@
 <!doctype html><%--
 /*******************************************************************************
- * This file is part of Renemon(R).
+ * This file is part of OpenNMS(R).
  *
- * Copyright (C) 2015-2017 The Renemon Group, Inc.
- * Renemon(R) is Copyright (C) 1999-2017 The Renemon Group, Inc.
+ * Copyright (C) 2015-2017 The OpenNMS Group, Inc.
+ * OpenNMS(R) is Copyright (C) 1999-2017 The OpenNMS Group, Inc.
  *
- * Renemon(R) is a registered trademark of The Renemon Group, Inc.
+ * OpenNMS(R) is a registered trademark of The OpenNMS Group, Inc.
  *
- * Renemon(R) is free software: you can redistribute it and/or modify
+ * OpenNMS(R) is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published
  * by the Free Software Foundation, either version 3 of the License,
  * or (at your option) any later version.
  *
- * Renemon(R) is distributed in the hope that it will be useful,
+ * OpenNMS(R) is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Affero General Public License for more details.
  *
  * You should have received a copy of the GNU Affero General Public License
- * along with Renemon(R).  If not, see:
+ * along with OpenNMS(R).  If not, see:
  *      http://www.gnu.org/licenses/
  *
  * For more information contact:
- *     Renemon(R) Licensing <license@opennms.org>
+ *     OpenNMS(R) Licensing <license@opennms.org>
  *     http://www.opennms.org/
- *     https://canaris.in
+ *     http://www.opennms.com/
  *******************************************************************************/
 
 --%>
@@ -65,7 +65,7 @@
     <c:forEach var="headTitle" items="${paramValues.headTitle}">
       <c:out value="${headTitle}" escapeXml="false"/> |
     </c:forEach>
-    Renemon Web Console
+    Renemon | Reliable Network Monitoring
   </title>
   <c:if test="${param.nobase != 'true' }">
     <base href="<%= baseHref %>" />
@@ -137,7 +137,7 @@
   <script type="text/javascript">
     // If no window.name is set, define one, to ensure it is not empty.
     // This is required for Vaadin to work properly (especially for @PreserveOnRefresh UIs).
-    // The random bits ensure that multiple windows have a different name, as well as different versions of Renemon
+    // The random bits ensure that multiple windows have a different name, as well as different versions of OpenNMS
     // can be used in parallel.
     if (!window.name) {
       window.name = "opennms-" + Math.random();

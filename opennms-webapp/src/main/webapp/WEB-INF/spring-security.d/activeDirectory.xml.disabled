@@ -77,16 +77,16 @@
         </beans:entry>
         -->
         <beans:entry>
-          <!-- Name of the AD group for normal (non-admin) Renemon users -->
-          <beans:key><beans:value>Renemon-Users</beans:value></beans:key>
+          <!-- Name of the AD group for normal (non-admin) OpenNMS users -->
+          <beans:key><beans:value>OpenNMS-Users</beans:value></beans:key>
           <beans:list>
             <beans:value>ROLE_USER</beans:value>
             <!-- <beans:value>ROLE_DASHBOARD</beans:value> -->
           </beans:list>
         </beans:entry>
         <beans:entry>
-          <!-- Name of the AD group for Renemon administrators -->
-          <beans:key><beans:value>Renemon-Admins</beans:value></beans:key>
+          <!-- Name of the AD group for OpenNMS administrators -->
+          <beans:key><beans:value>OpenNMS-Admins</beans:value></beans:key>
           <beans:list>
             <beans:value>ROLE_USER</beans:value>
             <beans:value>ROLE_ADMIN</beans:value>

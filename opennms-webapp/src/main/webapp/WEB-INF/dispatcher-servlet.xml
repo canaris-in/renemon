@@ -467,7 +467,7 @@
 
                 <ref bean="mapMenuEntries" />
 
-<!-- called "Configure Renemon" in the user menu now
+<!-- called "Configure OpenNMS" in the user menu now
                 <bean class="org.opennms.web.navigate.AdminUserNavBarEntry">
                     <property name="name" value="Admin"/>
                     <property name="url" value="admin/index.jsp"/>

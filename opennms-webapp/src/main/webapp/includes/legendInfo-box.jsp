@@ -1,30 +1,30 @@
 <%--
 /*******************************************************************************
- * This file is part of Renemon(R).
+ * This file is part of OpenNMS(R).
  *
- * Copyright (C) 2010-2014 The Renemon Group, Inc.
- * Renemon(R) is Copyright (C) 1999-2014 The Renemon Group, Inc.
+ * Copyright (C) 2010-2014 The OpenNMS Group, Inc.
+ * OpenNMS(R) is Copyright (C) 1999-2014 The OpenNMS Group, Inc.
  *
- * Renemon(R) is a registered trademark of The Renemon Group, Inc.
+ * OpenNMS(R) is a registered trademark of The OpenNMS Group, Inc.
  *
- * Renemon(R) is free software: you can redistribute it and/or modify
+ * OpenNMS(R) is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published
  * by the Free Software Foundation, either version 3 of the License,
  * or (at your option) any later version.
  *
- * Renemon(R) is distributed in the hope that it will be useful,
+ * OpenNMS(R) is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Affero General Public License for more details.
  *
  * You should have received a copy of the GNU Affero General Public License
- * along with Renemon(R).  If not, see:
+ * along with OpenNMS(R).  If not, see:
  *      http://www.gnu.org/licenses/
  *
  * For more information contact:
- *     Renemon(R) Licensing <license@opennms.org>
+ *     OpenNMS(R) Licensing <license@opennms.org>
  *     http://www.opennms.org/
- *     https://canaris.in
+ *     http://www.opennms.com/
  *******************************************************************************/
 
 --%>
@@ -43,10 +43,10 @@
 Each status cell is an intersection of a Location and Application
 </p>
 <p>
-An Application is defined by a subset of the set of IP based services created in Renemon
+An Application is defined by a subset of the set of IP based services created in OpenNMS
 </p>
 <p>
-A Location is an arbitrary entity defined through configuration by the Renemon user
+A Location is an arbitrary entity defined through configuration by the OpenNMS user
 </p>
 <p>
 Each Location presents Availability as the best percentage possible based on the history of status<br/>

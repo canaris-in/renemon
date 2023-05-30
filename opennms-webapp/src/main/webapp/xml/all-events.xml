@@ -365,7 +365,7 @@
             4
         </eventSeverity>
         <eventSource>
-            Renemon.Discovery
+            OpenNMS.Discovery
         </eventSource>
         <eventTime>
             2008-12-12T14:50:05-05:00

@@ -1,30 +1,30 @@
 <%--
 /*******************************************************************************
- * This file is part of Renemon(R).
+ * This file is part of OpenNMS(R).
  *
- * Copyright (C) 2002-2014 The Renemon Group, Inc.
- * Renemon(R) is Copyright (C) 1999-2014 The Renemon Group, Inc.
+ * Copyright (C) 2002-2014 The OpenNMS Group, Inc.
+ * OpenNMS(R) is Copyright (C) 1999-2014 The OpenNMS Group, Inc.
  *
- * Renemon(R) is a registered trademark of The Renemon Group, Inc.
+ * OpenNMS(R) is a registered trademark of The OpenNMS Group, Inc.
  *
- * Renemon(R) is free software: you can redistribute it and/or modify
+ * OpenNMS(R) is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published
  * by the Free Software Foundation, either version 3 of the License,
  * or (at your option) any later version.
  *
- * Renemon(R) is distributed in the hope that it will be useful,
+ * OpenNMS(R) is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Affero General Public License for more details.
  *
  * You should have received a copy of the GNU Affero General Public License
- * along with Renemon(R).  If not, see:
+ * along with OpenNMS(R).  If not, see:
  *      http://www.gnu.org/licenses/
  *
  * For more information contact:
- *     Renemon(R) Licensing <license@opennms.org>
+ *     OpenNMS(R) Licensing <license@opennms.org>
  *     http://www.opennms.org/
- *     https://canaris.in
+ *     http://www.opennms.com/
  *******************************************************************************/
 
 --%>
@@ -67,25 +67,25 @@ function toggleDiv(divName) {
 
 <div class="card">
 <div class="card-header">
-  <span>The Renemon Web User Interface Has Experienced an Error</span>
+  <span>The OpenNMS Web User Interface Has Experienced an Error</span>
 </div>
 <div class="card-body">
 
 <p>
-  The Renemon web UI has encountered an error that it does
+  The OpenNMS web UI has encountered an error that it does
   not know how to handle.
 </p>
 
 <p>
   Possible causes could be that the database is not responding,
-  the Renemon application has stopped or is not running, or there
+  the OpenNMS application has stopped or is not running, or there
   is an issue with the servlet container.
 </p>
 
 <p>
   Please bring this message to the attention of the
-  person responsible for maintaining Renemon for your organization,
-  and have him or her check that Renemon, the external servlet container
+  person responsible for maintaining OpenNMS for your organization,
+  and have him or her check that OpenNMS, the external servlet container
   (if applicable), and the database are all running without errors.
 </p>
 
@@ -101,7 +101,7 @@ if(showStrackTrace) {
 String errorDetails = 
 "System Details\n" +
 "--------------\n" +
-"Renemon Version: " + Vault.getProperty("version.display") + "\n" +
+"OpenNMS Version: " + Vault.getProperty("version.display") + "\n" +
 "Java Version: " + System.getProperty("java.version") + " " + System.getProperty("java.vendor") + "\n" +
 "Java Virtual Machine: " + System.getProperty("java.vm.version") + " " + System.getProperty("java.vm.vendor") + "\n" +
 "Operating System: " + System.getProperty("os.name") + " " +  System.getProperty("os.version") + " " + (System.getProperty("os.arch")) + "\n" +
@@ -216,7 +216,7 @@ userSession.setAttribute("errorReportDetails", errorDetails);
   </div>
   <table class="table table-sm table-bordered">
     <tr>
-      <th>Renemon Version:</th>
+      <th>OpenNMS Version:</th>
       <td><%=Vault.getProperty("version.display")%></td>
     </tr>
     <tr>
@@ -251,18 +251,18 @@ userSession.setAttribute("errorReportDetails", errorDetails);
     There are two options for reporting this problem outside your own organization.
     </p>
 
-    <strong>Renemon Bug Tracker</strong>
+    <strong>OpenNMS Bug Tracker</strong>
     <p>
-    If you have an account on the <a href="http://issues.opennms.org/">Renemon issue tracker</a>,
-    please consider reporting this problem. Bug reports help us make Renemon better, and are
+    If you have an account on the <a href="http://issues.opennms.org/">OpenNMS issue tracker</a>,
+    please consider reporting this problem. Bug reports help us make OpenNMS better, and are
     often the only way we become aware of problems. Please do search the tracker first to check
     that others have not already reported the problem that you have encountered.
     </p>
 
-    <strong>Renemon Commercial Support</strong>
+    <strong>OpenNMS Commercial Support</strong>
     <p>
-    If you have a commercial support agreement with <a href="https://canaris.in">The
-    Renemon Group</a>, please consider opening a support ticket about this problem at
+    If you have a commercial support agreement with <a href="http://www.opennms.com/">The
+    OpenNMS Group</a>, please consider opening a support ticket about this problem at
     <strong><a href="https://support.opennms.com/">support.opennms.com</a></strong> or via
     e-mail. Tickets from our customers receive priority treatment from our support staff.
     If you create a support ticket and the support engineer handling the ticket determines

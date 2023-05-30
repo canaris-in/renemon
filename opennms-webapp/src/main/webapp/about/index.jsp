@@ -1,30 +1,30 @@
 <%--
 /*******************************************************************************
- * This file is part of Renemon(R).
+ * This file is part of OpenNMS(R).
  *
- * Copyright (C) 2002-2023 The Renemon Group, Inc.
- * Renemon(R) is Copyright (C) 1999-2023 The Renemon Group, Inc.
+ * Copyright (C) 2002-2023 The OpenNMS Group, Inc.
+ * OpenNMS(R) is Copyright (C) 1999-2023 The OpenNMS Group, Inc.
  *
- * Renemon(R) is a registered trademark of The Renemon Group, Inc.
+ * OpenNMS(R) is a registered trademark of The OpenNMS Group, Inc.
  *
- * Renemon(R) is free software: you can redistribute it and/or modify
+ * OpenNMS(R) is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published
  * by the Free Software Foundation, either version 3 of the License,
  * or (at your option) any later version.
  *
- * Renemon(R) is distributed in the hope that it will be useful,
+ * OpenNMS(R) is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Affero General Public License for more details.
  *
  * You should have received a copy of the GNU Affero General Public License
- * along with Renemon(R).  If not, see:
+ * along with OpenNMS(R).  If not, see:
  *      http://www.gnu.org/licenses/
  *
  * For more information contact:
- *     Renemon(R) Licensing <license@opennms.org>
+ *     OpenNMS(R) Licensing <license@opennms.org>
  *     http://www.opennms.org/
- *     https://canaris.in
+ *     http://www.opennms.com/
  *******************************************************************************/
 
 --%>
@@ -150,15 +150,15 @@
   </div>
   <div class="card-body">
   <p>
-    <a href="http://www.opennms.org/">Renemon&reg;</a> is a registered
+    <a href="http://www.opennms.org/">OpenNMS&reg;</a> is a registered
     trademark, and Horizon&trade;, Meridian&trade;, and Compass&trade; are
-    trademarks, of <a href="http://www.opennms.com">The Renemon Group, Inc.</a>
-    Horizon&trade; software by Renemon&reg; and Meridian&trade; software by Renemon&reg;, as
+    trademarks, of <a href="http://www.opennms.com">The OpenNMS Group, Inc.</a>
+    Horizon&trade; software by OpenNMS&reg; and Meridian&trade; software by OpenNMS&reg;, as
     distributed here, are copyright &copy; 2002-2023
-    <a href="https://canaris.in">The Renemon Group, Inc.</a>
+    <a href="http://www.opennms.com/">The OpenNMS Group, Inc.</a>
   </p>
   <p>
-    Renemon is a derivative work, containing both original code, included
+    OpenNMS is a derivative work, containing both original code, included
     code and modified code that was published under the GNU Affero General Public
     License. Please see the source for detailed copyright notices.
   </p>

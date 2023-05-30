@@ -1,6 +1,6 @@
 {
-    "name": "Renemon | Reliable Network Monitoring",
-    "short_name": "Renemon",
+    "name": "OpenNMS Horizon",
+    "short_name": "OpenNMS",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",

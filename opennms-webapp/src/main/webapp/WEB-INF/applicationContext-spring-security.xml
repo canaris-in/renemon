@@ -9,7 +9,7 @@
               http://xmlns.opennms.org/xsd/spring/onms-osgi http://xmlns.opennms.org/xsd/spring/onms-osgi.xsd
               http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
   
-  <http pattern="/rest/alarms/**" realm="Renemon Realm" create-session="never" use-expressions="true">
+  <http pattern="/rest/alarms/**" realm="OpenNMS Realm" create-session="never" use-expressions="true">
     <csrf disabled="true" />
     <headers defaults-disabled="true" />
 
@@ -38,7 +38,7 @@
   </http>
 
   <!-- Only use BASIC auth for the RESTful APIs -->
-  <http pattern="/rest/**" realm="Renemon Realm" create-session="never" use-expressions="false">
+  <http pattern="/rest/**" realm="OpenNMS Realm" create-session="never" use-expressions="false">
     <csrf disabled="true" />
     <headers defaults-disabled="true" />
 
@@ -114,7 +114,7 @@
     <custom-filter position="LAST" ref="authFilterEnabler"/>
   </http>
 
-  <http pattern="/nrt/**" realm="Renemon Realm" use-expressions="false">
+  <http pattern="/nrt/**" realm="OpenNMS Realm" use-expressions="false">
     <csrf disabled="true" />
     <headers defaults-disabled="true" />
 
@@ -133,7 +133,7 @@
   </http>
 
   <!-- Only use BASIC auth for the RESTful API v2 -->
-  <http pattern="/api/v2/**" realm="Renemon Realm" create-session="never" use-expressions="false">
+  <http pattern="/api/v2/**" realm="OpenNMS Realm" create-session="never" use-expressions="false">
     <csrf disabled="true" />
     <headers defaults-disabled="true" />
 
@@ -162,7 +162,7 @@
   </http>
 
   <!-- Only use BASIC auth for the RSS URL -->
-  <http pattern="/rss.jsp*" realm="Renemon Realm" use-expressions="false">
+  <http pattern="/rss.jsp*" realm="OpenNMS Realm" use-expressions="false">
     <csrf disabled="true" />
     <headers defaults-disabled="true" />
 
@@ -176,7 +176,7 @@
     <custom-filter position="LAST" ref="authFilterEnabler"/>
   </http>
   
-  <http pattern="/admin/userGroupView/**" use-expressions="true" realm="Renemon Realm" auto-config="false" entry-point-ref="loginUrlAuthenticationEntryPoint">
+  <http pattern="/admin/userGroupView/**" use-expressions="true" realm="OpenNMS Realm" auto-config="false" entry-point-ref="loginUrlAuthenticationEntryPoint">
     <!-- see NMS-13124 -->
     <csrf request-matcher-ref="csrfMatcher"/>
 
@@ -261,7 +261,7 @@
   </beans:bean>
 
   <!-- Only one <http> section can match the implicit '/**' pattern -->
-  <http pattern="/**" use-expressions="true" realm="Renemon Realm" auto-config="false" entry-point-ref="loginUrlAuthenticationEntryPoint">
+  <http pattern="/**" use-expressions="true" realm="OpenNMS Realm" auto-config="false" entry-point-ref="loginUrlAuthenticationEntryPoint">
     <access-denied-handler error-page="/accessDenied.jsp" />
     <csrf request-matcher-ref="csrfMatcher"/>
     <headers defaults-disabled="true" />
@@ -439,12 +439,12 @@
   </beans:bean>
 
   <beans:bean id="xRequestedWithAwareBasicAuthEntryPoint" class="org.opennms.web.springframework.security.XRequestedWithAwareBasicAuthEntryPoint">
-    <beans:property name="realmName" value="Renemon Realm" />
+    <beans:property name="realmName" value="OpenNMS Realm" />
   </beans:bean>
 
   <beans:bean id="xRequestedWithAwareLoginUrlAuthEntryPoint" class="org.opennms.web.springframework.security.XRequestedWithAwareLoginUrlAuthEntryPoint">
     <beans:constructor-arg value="/login.jsp" />
-    <beans:property name="realmName" value="Renemon Realm" />
+    <beans:property name="realmName" value="OpenNMS Realm" />
   </beans:bean>
 
 </beans:beans>

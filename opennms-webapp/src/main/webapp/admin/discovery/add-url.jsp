@@ -24,7 +24,7 @@
  * For more information contact:
  *     Renemon(R) Licensing <license@opennms.org>
  *     http://www.opennms.org/
- *     https://canaris.in
+ *     http://www.opennms.com/
  *******************************************************************************/
 
 --%>

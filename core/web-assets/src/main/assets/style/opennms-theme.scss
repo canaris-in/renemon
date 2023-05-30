@@ -500,9 +500,6 @@ iframe.vaadin-fullscreen {
 }
 
 }
-#ui-preview-btn {
-  display:none;
-}
 .navbar-brand #logo {
   width: 10rem;
   height: auto;
@@ -520,4 +517,8 @@ iframe.vaadin-fullscreen {
 }
 #index-page-container .card-header a {
   color: white;
+}
+
+#ui-preview-btn {
+  display:none;
 }
