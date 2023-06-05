@@ -17,7 +17,7 @@
     "@featherds/app-bar": "0.10.17",
     "@featherds/app-layout": "0.10.17",
     "@featherds/autocomplete": "0.10.17",
-    "@featherds/button": "0.10.17",
+    "@featherds/button": "0.12.18",
     "@featherds/checkbox": "0.10.17",
     "@featherds/chips": "0.10.17",
     "@featherds/date-input": "0.10.17",
